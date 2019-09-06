@@ -8,4 +8,6 @@ Things you may want to cover:
 
 * Database: Postgres
 
-* ...
+* Finalmente
+
+* oooooooooo
