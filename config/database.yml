@@ -80,6 +80,6 @@ test:
 #
 production:
   <<: *default
-  database: contact-list_production
-  username: contact-list
+  database: d9bg4e1vfp02ev
+  username: ujyaacxlbstgfz
   password: <%= ENV['CONTACT-LIST_DATABASE_PASSWORD'] %>
