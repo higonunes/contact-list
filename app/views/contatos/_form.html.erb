@@ -1,10 +1,10 @@
-<%= form_with(model: contact, local: true) do |form| %>
-  <% if contact.errors.any? %>
+<%= form_with(model: contato, local: true) do |form| %>
+  <% if contato.errors.any? %>
     <div id="error_explanation">
-      <h2><%= pluralize(contact.errors.count, "error") %> prohibited this contact from being saved:</h2>
+      <h2><%= pluralize(contato.errors.count, "error") %> prohibited this contato from being saved:</h2>
 
       <ul>
-      <% contact.errors.full_messages.each do |message| %>
+      <% contato.errors.full_messages.each do |message| %>
         <li><%= message %></li>
       <% end %>
       </ul>
@@ -17,8 +17,8 @@
   </div>
 
   <div class="field">
-    <%= form.label :phone %>
-    <%= form.text_field :phone %>
+    <%= form.label :telefone %>
+    <%= form.text_field :telefone %>
   </div>
 
   <div class="actions">

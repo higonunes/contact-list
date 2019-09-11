@@ -10,16 +10,18 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_09_08_170446) do
+ActiveRecord::Schema.define(version: 2019_09_11_042031) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
-  create_table "contacts", force: :cascade do |t|
+  create_table "contatos", force: :cascade do |t|
     t.string "nome"
-    t.string "phone"
+    t.string "telefone"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.bigint "user_id"
+    t.index ["user_id"], name: "index_contatos_on_user_id"
   end
 
   create_table "users", force: :cascade do |t|
@@ -30,4 +32,5 @@ ActiveRecord::Schema.define(version: 2019_09_08_170446) do
     t.datetime "updated_at", null: false
   end
 
+  add_foreign_key "contatos", "users"
 end
