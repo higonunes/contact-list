@@ -1,8 +1,8 @@
-# README
+# Lista de contatos
 
-Apenas um aplicativo de aprendizagem de ruby yon rails igual esta mensagem.
+Apenas um aplicativo de aprendizagem de ruby on rails.
 
-Things you may want to cover:
+## Tecnologias
 
 * Ruby version: 2.6.3
 
